@@ -1,7 +1,8 @@
 use crate::Queue;
 use std::marker;
 
-// TODO make the container size dynamic, maybe can use macro realize it
+// Ref link https://blog.csdn.net/zichen_ziqi/article/details/80819939
+// TODO Enable the queue size pass in by parameter, maybe can use macro realize it
 pub struct LoopQueue<T> {
     front: usize,
     rear: usize,
