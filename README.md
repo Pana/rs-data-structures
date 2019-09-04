@@ -1,6 +1,6 @@
 # rs-data-structures
 
-Common Data Structures implementd in rust.
+Implement common data structures with rust.
 
 * Queue
 * Stack
