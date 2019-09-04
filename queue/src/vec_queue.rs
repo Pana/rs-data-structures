@@ -1,6 +1,7 @@
 use std::fmt;
 use crate::Queue;
 
+// implement with std vector
 pub struct VecQueue<T> {
     q: Vec<T>,
 }

@@ -1,5 +1,6 @@
 
 pub mod vec_queue;
+pub mod array_queue;
 
 /// The queue data structure: enable put&poll
 pub trait Queue<T> {
