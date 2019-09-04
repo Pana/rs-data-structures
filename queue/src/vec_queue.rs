@@ -1,24 +1,29 @@
-use std::fmt;
 use crate::Queue;
+use std::fmt;
 
 // implement with std vector
+#[derive(Debug)]
 pub struct VecQueue<T> {
     q: Vec<T>,
 }
 
-impl<T: fmt::Debug> Queue<T> for VecQueue<T> {
+impl<T> VecQueue<T> {
+    #[allow(dead_code)]
     fn new() -> Self {
         VecQueue{
             q: Vec::new(),
         }
     }
+}
 
+impl<T: fmt::Debug> Queue<T> for VecQueue<T> {
     fn is_empty(&self) -> bool {
         self.q.len() == 0
     }
 
-    fn put(&mut self, val: T) {
+    fn put(&mut self, val: T) -> bool {
         self.q.push(val);
+        true
     }
 
     /// will return a Option<T> 
