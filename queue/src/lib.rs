@@ -1,6 +1,7 @@
 
 pub mod vec_queue;
 pub mod loop_queue;
+pub mod linked_list_queue;
 
 /// The queue data structure: enable put&poll
 pub trait Queue<T> {
